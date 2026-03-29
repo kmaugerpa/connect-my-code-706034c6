@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Mauger — Board Value</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-header { padding:3.5rem 2rem 2.5rem; border-bottom:0.5px solid #e8e8e4; }
+.page-intro { font-size:15px; line-height:1.75; color:#555; max-width:620px; }
+.context-bar { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:#e8e8e4; border-top:0.5px solid #e8e8e4; border-bottom:0.5px solid #e8e8e4; }
+.context-cell { background:#fff; padding:1.75rem 2rem; }
+.context-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#999; margin-bottom:0.75rem; }
+.method-strip { padding:2rem 2rem; border-bottom:0.5px solid #e8e8e4; }
+.method-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:#e8e8e4; border:0.5px solid #e8e8e4; border-radius:12px; overflow:hidden; }
+.method-cell { background:#fff; padding:1.25rem 1.5rem; }
+.method-num { font-family:'Playfair Display',serif; font-size:28px; font-weight:400; color:#1a1a1a; margin-bottom:4px; line-height:1; }
+.method-word { font-size:14px; font-weight:500; margin-bottom:6px; }
+.method-desc { font-size:12px; line-height:1.5; color:#555; }
+.domains-section { padding:2.5rem 2rem; }
+.domain-card { border:0.5px solid #e8e8e4; border-radius:12px; margin-bottom:0.75rem; overflow:hidden; }
+.domain-inner { display:grid; grid-template-columns:2fr 3fr; gap:2rem; padding:1.5rem 1.75rem; align-items:start; }
+.domain-num { font-family:'Playfair Display',serif; font-size:13px; color:#999; margin-bottom:6px; }
+.domain-title { font-size:16px; font-weight:500; margin-bottom:6px; }
+.domain-tag { display:inline-block; font-size:11px; color:#555; border:0.5px solid #d0d0cc; border-radius:20px; padding:2px 10px; }
+.domain-desc { font-size:14px; line-height:1.65; color:#555; margin-bottom:1rem; }
+.proof-list { list-style:none; display:flex; flex-direction:column; gap:6px; }
+.proof-list li { font-size:13px; color:#555; padding-left:1rem; position:relative; line-height:1.5; }
+.proof-list li::before { content:'—'; position:absolute; left:0; color:#999; }
+.proof-list li strong { font-weight:500; color:#1a1a1a; }
+.fit-section { padding:0 2rem 2.5rem; }
+.fit-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0.75rem; }
+.fit-title { font-size:13px; font-weight:500; margin-bottom:6px; }
+.fit-desc { font-size:12px; line-height:1.5; color:#555; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Kevin Mauger</a>
+  <ul class="nav-links">
+    <li><a href="story.html">The story</a></li>
+    <li><a href="board-value.html" class="active">Board value</a></li>
+    <li><a href="entrepreneurship.html">Entrepreneurship</a></li>
+    <li><a href="esop.html">ESOP</a></li>
+    <li><a href="book.html">The book</a></li>
+    <li><a href="bets.html">The bets</a></li>
+    <li><a href="personal.html">Personal</a></li>
+    <li><a href="speaking.html">Speaking</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="page-header">
+  <p class="eyebrow">Board value</p>
+  <h1 style="max-width:600px;margin-bottom:1.25rem;">Practical, strategic, and built from experience.</h1>
+  <p class="page-intro">Companies don't fail because their leaders aren't smart. They stall because the playbook that got them here won't get them there. I've lived through every major inflection point — distressed startup, growth phase, ownership transition, and public company exit — and I know what each stage actually requires.</p>
+</section>
+
+<div class="context-bar">
+  <div class="context-cell">
+    <p class="context-label">The inflection point problem</p>
+    <p style="font-size:14px;line-height:1.65;color:#555;">What works at <strong style="font-weight:500;color:#1a1a1a;">$6M breaks at $20M.</strong> What scales to $40M would have killed the business at the start. Every stage demands different systems, different priorities, and different conversations at the board level.</p>
+  </div>
+  <div class="context-cell">
+    <p class="context-label">What I've learned drives results</p>
+    <p style="font-size:14px;line-height:1.65;color:#555;">After twelve years and five transactions: <strong style="font-weight:500;color:#1a1a1a;">alignment, ownership mindset, and clarity of execution.</strong> Keep the customer as the north star. Ask more than you answer. That's the lens I bring.</p>
+  </div>
+</div>
+
+<section class="method-strip">
+  <p class="section-label">How I work with leadership teams</p>
+  <div class="method-grid">
+    <div class="method-cell">
+      <p class="method-num">01</p>
+      <p class="method-word">Simplify</p>
+      <p class="method-desc">Cut through the noise. Begin with the end in mind — define what success actually looks like, then build backward. Vague vision doesn't inspire anyone.</p>
+    </div>
+    <div class="method-cell">
+      <p class="method-num">02</p>
+      <p class="method-word">Focus</p>
+      <p class="method-desc">Ask more than I answer. The customer is the north star — every strategic question eventually comes back to it. Teams that stay close to that answer move faster.</p>
+    </div>
+    <div class="method-cell">
+      <p class="method-num">03</p>
+      <p class="method-word">Execute</p>
+      <p class="method-desc">People buy in to what they help create. Build accountability collaboratively — and when something goes wrong, own it at the top before looking anywhere else.</p>
+    </div>
+  </div>
+</section>
+
+<div class="pullquote">
+  <div class="pullquote-inner">
+    <p class="pullquote-text">"The ESOP was a big unlock for me — when people feel ownership, performance changes. That's not a soft observation. It showed up in the numbers."</p>
+    <p class="pullquote-sub">Kevin Mauger — on the shift from engagement to ownership culture</p>
+  </div>
+</div>
+
+<section class="domains-section">
+  <p class="section-label">Areas of board contribution</p>
+
+  <div class="domain-card">
+    <div class="domain-inner">
+      <div><p class="domain-num">01</p><p class="domain-title">Turnaround & growth</p><span class="domain-tag">Operator experience</span></div>
+      <div>
+        <p class="domain-desc">I acquired NCC when it was $1M insolvent and grew it from $6M to $40M over twelve years. NCC was a full manufacturing operation — mechanical, systems, and controls engineers; a machine shop, sheet metal, welding, and electrical assembly. MTO and production parts. Real operational complexity. That arc required reading the business at each stage.</p>
+        <ul class="proof-list">
+          <li><strong>Distressed acquisition:</strong> diagnosed core issues quickly, stabilized within the first year</li>
+          <li><strong>Sustained growth:</strong> $6M to $40M without outside capital — organic, disciplined, data-informed</li>
+          <li><strong>Stage-specific leadership:</strong> different systems, priorities, and team structures at each phase</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-inner">
+      <div><p class="domain-num">02</p><p class="domain-title">Customer focus & strategy</p><span class="domain-tag">North star thinking</span></div>
+      <div>
+        <p class="domain-desc">The customer is the north star — not as a cliché but as an operating discipline. Every strategic question eventually comes back to it. I ask more than I answer, and assumptions cost more than curiosity every single time.</p>
+        <ul class="proof-list">
+          <li><strong>Market positioning:</strong> moved NCC from generalist to category leader by listening to what customers couldn't get elsewhere</li>
+          <li><strong>Product development:</strong> built the ophthalmic conveyor business around a specific customer pain point — not an internal assumption</li>
+          <li><strong>Sales discipline:</strong> the right question beats the best pitch. Always.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-inner">
+      <div><p class="domain-num">03</p><p class="domain-title">Culture & people</p><span class="domain-tag">Ownership mindset</span></div>
+      <div>
+        <p class="domain-desc">Culture is the most underrated variable on a board's risk register. I've built it intentionally — assuming best intent, making it personal, and holding myself accountable first when things go wrong. Business is personal. Always has been.</p>
+        <ul class="proof-list">
+          <li><strong>Servant leadership</strong> practiced as an operating discipline, not a philosophy seminar</li>
+          <li><strong>Open-book management:</strong> financial literacy built across the entire organization</li>
+          <li><strong>Accountability without blame:</strong> set people up first — then ask what went wrong, not who</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-inner">
+      <div><p class="domain-num">04</p><p class="domain-title">ESOP & ownership transitions</p><span class="domain-tag">Rare perspective</span></div>
+      <div>
+        <p class="domain-desc">Fewer than 1 in 950 US businesses has ever done this — and most used it as an exit. I executed an ESOP mid-stride as a deliberate growth strategy. The $17.5M distributed at exit proved the thesis.</p>
+        <ul class="proof-list">
+          <li><strong>ESOP structure:</strong> mechanics, legal framework, valuation, and cultural rollout</li>
+          <li><strong>Ownership culture:</strong> built the mindset before the structure — the ESOP formalized what already existed</li>
+          <li><strong>$17.5M distributed</strong> to fewer than 100 employees at exit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-inner">
+      <div><p class="domain-num">05</p><p class="domain-title">M&A & transactions</p><span class="domain-tag">Five transactions</span></div>
+      <div>
+        <p class="domain-desc">Five transactions across both sides of the table. Each required a different analytical lens — valuation, structure, integration, governance. Then two years inside the public company that bought us.</p>
+        <ul class="proof-list">
+          <li><strong>Two acquisitions</strong> as an employee at NCC prior to purchasing the company</li>
+          <li><strong>Bought NCC</strong> from a distressed ownership group — structured the deal under pressure</li>
+          <li><strong>Flexmove Americas JV:</strong> international joint venture with Malaysian partners — conceived, built, and exited</li>
+          <li><strong>Sold NCC</strong> to ATS Automation — $40M exit to a public strategic acquirer</li>
+          <li><strong>Post-acquisition:</strong> two years inside ATS understanding public company governance firsthand</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="domain-card">
+    <div class="domain-inner">
+      <div><p class="domain-num">06</p><p class="domain-title">Operating systems & scale</p><span class="domain-tag">EOS practitioner</span></div>
+      <div>
+        <p class="domain-desc">Operational rigor is a strategic question. I've built the systems — scorecards, meeting cadence, issue resolution, accountability structures — that let a board assess health quickly and give leadership room to execute without noise.</p>
+        <ul class="proof-list">
+          <li><strong>EOS implementation</strong> from the ground up — practitioner, not a consultant's recommendation</li>
+          <li><strong>Metrics that matter:</strong> built scorecards that surfaced problems before they became crises</li>
+          <li><strong>Systems outlasted my tenure</strong> — the culture and process continued post-exit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="fit-section">
+  <p class="section-label">A focused practice — by design</p>
+  <div class="fit-grid">
+    <div class="card"><p class="fit-title">Founder-led & family-owned businesses</p><p class="fit-desc">I've been in the seat. I know what it costs to make hard calls when it's your name on the door and your family at stake.</p></div>
+    <div class="card"><p class="fit-title">ESOP companies</p><p class="fit-desc">Almost no one on a board has actually done this. I have — structure, rollout, culture, and the exit that proved the strategy.</p></div>
+    <div class="card"><p class="fit-title">PE direct deals</p><p class="fit-desc">If you're doing direct deals and need operating perspective at the board level — someone who's been inside the machine — that's the conversation I'm interested in.</p></div>
+  </div>
+</section>
+
+<div class="cta-strip" style="margin:0 2rem 2.5rem;">
+  <div><h3>I work with a small number of companies.</h3><p>Having stepped away from day-to-day operations, I now focus entirely on a small number of board engagements where I can genuinely contribute — not just attend meetings. If that sounds like a fit, let's find out.</p></div>
+  <a href="contact.html" class="btn">Let's talk →</a>
+</div>
+
+<footer>
+  <span>Kevin Mauger &nbsp;·&nbsp; Philadelphia, PA</span>
+  <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</footer>
+
+</body>
+</html>

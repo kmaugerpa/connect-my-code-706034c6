@@ -1,0 +1,194 @@
+/* Kevin Mauger — Personal Brand Site */
+/* Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #555;
+  --color-text-tertiary: #999;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f7f7f5;
+  --color-border-light: #e8e8e4;
+  --color-border-medium: #d0d0cc;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2rem;
+  border-bottom: 0.5px solid var(--color-border-light);
+}
+.nav-logo {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--color-text-primary);
+}
+.nav-links a.active { font-weight: 500; }
+
+/* Typography */
+h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 400; line-height: 1.2; }
+h1 { font-size: clamp(26px, 3.5vw, 40px); }
+h2 { font-size: clamp(22px, 2.5vw, 32px); }
+h3 { font-size: 20px; }
+p { font-size: 14px; line-height: 1.75; color: var(--color-text-secondary); }
+
+/* Common elements */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 1rem;
+}
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 1.5rem;
+}
+.stat-num {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.65rem 1.75rem;
+  border: 0.5px solid var(--color-border-medium);
+  border-radius: var(--radius-md);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.btn:hover { background: var(--color-bg-secondary); }
+
+/* Cards */
+.card {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+.card-bordered {
+  background: var(--color-bg-primary);
+  border: 0.5px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+/* Pullquote */
+.pullquote {
+  padding: 2rem 2rem;
+  border-top: 0.5px solid var(--color-border-light);
+  border-bottom: 0.5px solid var(--color-border-light);
+}
+.pullquote-inner {
+  border-left: 2px solid var(--color-border-medium);
+  padding-left: 1.5rem;
+}
+.pullquote-text {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  max-width: 600px;
+}
+.pullquote-sub { font-size: 12px; color: var(--color-text-tertiary); }
+
+/* CTA Strip */
+.cta-strip {
+  margin: 0 2rem;
+  padding: 2rem;
+  border: 0.5px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.cta-strip h3 { font-size: 20px; margin-bottom: 6px; }
+.cta-strip p { font-size: 13px; line-height: 1.5; }
+
+/* Footer */
+footer {
+  padding: 1.5rem 2rem;
+  border-top: 0.5px solid var(--color-border-light);
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer span, footer a {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+footer a { border-bottom: 0.5px solid var(--color-border-light); }
+
+/* Grid layouts */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; }
+.grid-5 { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.75rem; }
+
+/* Stat bar */
+.stat-bar {
+  display: grid;
+  gap: 1px;
+  background: var(--color-border-light);
+  border-top: 0.5px solid var(--color-border-light);
+  border-bottom: 0.5px solid var(--color-border-light);
+}
+.stat-cell {
+  background: var(--color-bg-primary);
+  padding: 1.25rem 1.5rem;
+}
