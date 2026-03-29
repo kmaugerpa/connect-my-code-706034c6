@@ -5,6 +5,11 @@
 .km-logo { font-family: 'Playfair Display', var(--font-serif); font-size: 17px; font-weight: 500; color: var(--color-text-primary); letter-spacing: 0.01em; }
 .km-nav-links { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .km-nav-links a { font-size: 13px; color: var(--color-text-secondary); text-decoration: none; }
+@media (max-width: 600px) {
+  .km-nav { flex-direction: column; gap: 0.75rem; padding: 1rem 1.5rem; }
+  .km-nav-links { gap: 1rem; justify-content: center; }
+  .km-nav-links a { font-size: 14px; }
+}
 .km-page-header { padding: 3.5rem 2rem 2.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
 .km-page-eyebrow { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 1rem; }
 .km-page-title { font-family: 'Playfair Display', var(--font-serif); font-size: clamp(26px, 3.5vw, 40px); font-weight: 400; line-height: 1.2; color: var(--color-text-primary); max-width: 600px; margin: 0 0 1.25rem; }
