@@ -59,6 +59,13 @@ h1 { font-family: 'Playfair Display', serif; font-size: clamp(26px, 3.5vw, 40px)
 footer { padding: 1.5rem 2rem; border-top: 0.5px solid #e0e0e0; margin-top: 2.5rem; display: flex; justify-content: space-between; align-items: center; }
 footer span { font-size: 13px; color: #666; }
 footer a { font-size: 13px; color: #666; text-decoration: none; border-bottom: 0.5px solid #ccc; }
+@media (max-width: 600px) {
+  .page-header { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .card-grid-3 { grid-template-columns: 1fr; }
+  .tattoo-inner { grid-template-columns: 1fr; }
+  .cta-strip { flex-direction: column; text-align: center; }
+}
 </style>
 </head>
 <body>
