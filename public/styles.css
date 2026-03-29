@@ -246,4 +246,7 @@ footer a:hover { color: var(--color-accent); }
   .stat-num {
     font-size: 20px;
   }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
