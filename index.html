@@ -45,6 +45,11 @@
 .book-title { font-family: 'Playfair Display', serif; font-size: 20px; font-style: italic; margin-bottom: 6px; }
 .book-subtitle { font-size: 13px; color: #6e6e73; margin-bottom: 1rem; }
 .book-desc { font-size: 13px; line-height: 1.6; color: #6e6e73; }
+@media (max-width: 600px) {
+  .bets-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .story-book { grid-template-columns: 1fr; }
+  .cta-strip { flex-direction: column; text-align: center; }
+}
 </style>
 </head>
 <body>
