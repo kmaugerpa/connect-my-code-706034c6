@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Mauger - Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.contact-layout { padding: 3.5rem 2rem; display: grid; grid-template-columns: 1fr 320px; gap: 4rem; align-items: start; border-bottom: 0.5px solid #e8e8e4; }
+.contact-intro { font-size: 15px; line-height: 1.75; color: #555; max-width: 480px; margin-bottom: 2rem; }
+.form-group { margin-bottom: 1.25rem; }
+label { display: block; font-size: 12px; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; letter-spacing: 0.03em; }
+input, textarea {
+  width: 100%;
+  padding: 0.65rem 0.875rem;
+  border: 0.5px solid #d0d0cc;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+input:focus, textarea:focus { border-color: #999; }
+textarea { height: 140px; resize: vertical; }
+.form-submit { width: 100%; padding: 0.75rem; background: #1a1a1a; color: #fff; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; }
+.form-submit:hover { background: #333; }
+.contact-sidebar { }
+.sidebar-item { padding: 1.5rem 0; border-bottom: 0.5px solid #e8e8e4; }
+.sidebar-item:first-child { padding-top: 0; }
+.sidebar-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+.sidebar-value { font-size: 14px; color: #1a1a1a; text-decoration: none; }
+.sidebar-note { font-size: 12px; color: #555; line-height: 1.5; margin-top: 4px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">Kevin Mauger</a>
+  <ul class="nav-links">
+    <li><a href="story.html">The Story</a></li>
+    <li><a href="board-value.html">Board Value</a></li>
+    <li><a href="entrepreneurship.html">Entrepreneurship</a></li>
+    <li><a href="esop.html">ESOP</a></li>
+    <li><a href="book.html">The Book</a></li>
+    <li><a href="bets.html">The Bets</a></li>
+    <li><a href="personal.html">Personal</a></li>
+    <li><a href="speaking.html">Speaking</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div style="padding:3.5rem 2rem 0;">
+  <p class="eyebrow">Contact</p>
+  <h1 style="margin-bottom:1.25rem;">Let's talk.</h1>
+</div>
+
+<div class="contact-layout">
+  <div>
+    <p class="contact-intro">Whether it's a board opportunity, a speaking inquiry, or a conversation about something you read on this site - the best next step is a direct conversation.</p>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label for="company">Company <span style="font-weight:400;color:#999;">(optional)</span></label>
+        <input type="text" id="company" name="company" placeholder="Your company">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send message</button>
+    </form>
+  </div>
+
+  <div class="contact-sidebar">
+    <div class="sidebar-item">
+      <p class="sidebar-label">Location</p>
+      <p class="sidebar-value">Philadelphia, PA</p>
+    </div>
+    <div class="sidebar-item">
+      <p class="sidebar-label">LinkedIn</p>
+      <a href="https://linkedin.com" class="sidebar-value" target="_blank">Kevin Mauger -></a>
+    </div>
+    <div class="sidebar-item">
+      <p class="sidebar-label">Response time</p>
+      <p class="sidebar-value">Within 48 hours</p>
+      <p class="sidebar-note">Unless I'm offshore. In which case, slightly longer.</p>
+    </div>
+    <div class="sidebar-item">
+      <p class="sidebar-label">Good conversations start with</p>
+      <p class="sidebar-note">A brief description of the company, where it is in its journey, and what role you're thinking about. That's enough to know if there's a fit worth exploring.</p>
+    </div>
+  </div>
+</div>
+
+<footer style="margin-top:2.5rem;">
+  <span>Kevin Mauger  |  Philadelphia, PA</span>
+  <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</footer>
+
+</body>
+</html>
