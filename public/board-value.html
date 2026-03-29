@@ -33,12 +33,21 @@
 .fit-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0.75rem; }
 .fit-title { font-size:13px; font-weight:500; margin-bottom:6px; }
 .fit-desc { font-size:12px; line-height:1.5; color:#555; }
+.credentials-bar { background:#f7f7f5; border-top:0.5px solid #e8e8e4; border-bottom:0.5px solid #e8e8e4; padding:1.25rem 2rem; }
+.credentials-row { display:flex; justify-content:center; gap:1.5rem; align-items:flex-start; flex-wrap:wrap; }
+.credentials-item { flex:1; min-width:200px; }
+.credentials-divider { width:1px; background:#d0d0cc; align-self:stretch; margin:0.25rem 0; }
+.credentials-label { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#999; margin-bottom:4px; }
+.credentials-text { font-size:13px; color:#555; line-height:1.5; }
+.credentials-quote { font-family:'Playfair Display',serif; font-style:italic; font-size:14px; color:#555; text-align:center; margin-top:1.25rem; }
 @media (max-width: 600px) {
   .context-bar { grid-template-columns: 1fr; }
   .method-grid { grid-template-columns: 1fr; }
   .domain-inner { grid-template-columns: 1fr; gap: 1rem; }
   .fit-grid { grid-template-columns: 1fr; }
   .cta-strip { flex-direction: column; text-align: center; }
+  .credentials-row { flex-direction:column; gap:1rem; }
+  .credentials-divider { display:none; }
 }
 </style>
 </head>
@@ -65,7 +74,27 @@
   <p class="page-intro">Companies don't fail because their leaders aren't smart. They stall because the playbook that got them here won't get them there. I've lived through every major inflection point - distressed startup, growth phase, ownership transition, and public company exit - and I know what each stage actually requires.</p>
 </section>
 
-<div class="context-bar">
+<div class="credentials-bar">
+  <div class="credentials-row">
+    <div class="credentials-item">
+      <p class="credentials-label">Board - PMMI</p>
+      <p class="credentials-text">Packaging & Processing Technologies · ~1,000 member companies · 4 years</p>
+    </div>
+    <div class="credentials-divider"></div>
+    <div class="credentials-item">
+      <p class="credentials-label">Board - Goin' Far Foundation</p>
+      <p class="credentials-text">Scholarship fund for children of deceased Phi Tau members · Since 2021</p>
+    </div>
+    <div class="credentials-divider"></div>
+    <div class="credentials-item">
+      <p class="credentials-label">Operator Governed</p>
+      <p class="credentials-text">President & majority owner, NCC Automated Systems · 17 years · Both sides of the table</p>
+    </div>
+  </div>
+  <p class="credentials-quote">"I know what each side needs from the other."</p>
+</div>
+
+
   <div class="context-cell">
     <p class="context-label">The inflection point problem</p>
     <p style="font-size:14px;line-height:1.65;color:#555;">What works at <strong style="font-weight:500;color:#1a1a1a;">$6M breaks at $20M.</strong> What scales to $40M would have killed the business at the start. Every stage demands different systems, different priorities, and different conversations at the board level.</p>
