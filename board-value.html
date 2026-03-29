@@ -33,6 +33,13 @@
 .fit-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0.75rem; }
 .fit-title { font-size:13px; font-weight:500; margin-bottom:6px; }
 .fit-desc { font-size:12px; line-height:1.5; color:#555; }
+@media (max-width: 600px) {
+  .context-bar { grid-template-columns: 1fr; }
+  .method-grid { grid-template-columns: 1fr; }
+  .domain-inner { grid-template-columns: 1fr; gap: 1rem; }
+  .fit-grid { grid-template-columns: 1fr; }
+  .cta-strip { flex-direction: column; text-align: center; }
+}
 </style>
 </head>
 <body>
