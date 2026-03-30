@@ -19,25 +19,10 @@
 .expertise-section { padding: 2.5rem 2rem; border-bottom: 1px solid #e8e8ed; }
 .bets-section { padding: 2.5rem 2rem; border-bottom: 1px solid #e8e8ed; }
 .bets-intro { font-size: 14px; line-height: 1.7; color: #6e6e73; max-width: 100%; margin-bottom: 1.25rem; }
-.bets-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: #e8e8ed; border: 1px solid #e8e8ed; border-radius: 16px; overflow: visible; }
-.bets-grid > .bet-cell:first-child { border-radius: 16px 0 0 0; }
-.bets-grid > .bet-cell:nth-child(5) { border-radius: 0 16px 0 0; }
-.bets-grid > .bet-cell:nth-child(6) { border-radius: 0 0 0 16px; }
-.bets-grid > .bet-cell:last-child { border-radius: 0 0 16px 0; }
-.bet-cell { background: #fff; padding: 1rem 1.25rem; transition: background 0.2s ease; position: relative; cursor: pointer; }
-.bet-cell:hover { background: #f5f5f7; z-index: 50; }
-.bet-num { font-family: 'Playfair Display', serif; font-size: 11px; color: #0071e3; margin-bottom: 5px; font-weight: 500; }
-.bet-text { font-size: 12px; font-weight: 500; color: #1d1d1f; line-height: 1.4; }
-.bet-tooltip { display: none; position: absolute; left: 50%; transform: translateX(-50%); width: 360px; background: #fff; border: 1px solid #e8e8ed; border-radius: 12px; padding: 1.25rem; box-shadow: 0 8px 30px rgba(0,0,0,0.12); z-index: 100; pointer-events: none; }
-.bet-cell:nth-child(-n+5) .bet-tooltip { top: calc(100% + 10px); bottom: auto; }
-.bet-cell:nth-child(-n+5) .bet-tooltip::after { content: ''; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-bottom-color: #fff; }
-.bet-cell:nth-child(-n+5) .bet-tooltip::before { content: ''; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); border: 7px solid transparent; border-bottom-color: #e8e8ed; }
-.bet-cell:nth-child(n+6) .bet-tooltip { bottom: calc(100% + 10px); top: auto; }
-.bet-cell:nth-child(n+6) .bet-tooltip::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: #fff; }
-.bet-cell:nth-child(n+6) .bet-tooltip::before { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 7px solid transparent; border-top-color: #e8e8ed; }
-.bet-cell:hover .bet-tooltip { display: block; }
-.bet-tooltip-title { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 400; color: #1d1d1f; margin-bottom: 6px; }
-.bet-tooltip-body { font-size: 13px; line-height: 1.65; color: #6e6e73; }
+.bets-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: #e8e8e4; border: 0.5px solid #e8e8e4; border-radius: 12px; overflow: hidden; }
+  .bet-cell { background: #f7f7f5; padding: 1rem 1.25rem; }
+  .bet-num { font-family: 'Playfair Display', serif; font-size: 11px; color: #999; margin-bottom: 5px; }
+  .bet-text { font-size: 12px; font-weight: 500; color: #1a1a1a; line-height: 1.4; }
 .bets-link { display: inline-block; margin-top: 1rem; font-size: 13px; color: #0071e3; text-decoration: none; font-weight: 500; transition: opacity 0.2s ease; }
 .bets-link:hover { opacity: 0.7; }
 .story-book { padding: 2.5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
@@ -104,46 +89,16 @@
   <p class="section-label">The Bets</p>
   <p class="bets-intro">These are bets I'd make if I had to do it all again. Some I read. Some I heard. Some I learned the hard way. And a few didn't even become clear until after I retired.</p>
   <div class="bets-grid">
-    <div class="bet-cell">
-      <p class="bet-num">01</p><p class="bet-text">Begin with the end in mind</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Begin with the end in mind.</p><p class="bet-tooltip-body">If you don't know what success looks like, you're navigating without a destination. The clearest thing I can do as a leader - or as a board member - is define what we're actually trying to build.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">02</p><p class="bet-text">Hope is an underrated virtue</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Hope is an underrated virtue.</p><p class="bet-tooltip-body">Hope is the predecessor to belief, and belief is where strategy begins. The leaders who stripped hope out in favor of pure analytical rigor built precise, efficient, uninspiring organizations.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">03</p><p class="bet-text">Find the good. Live there.</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Find the good. Live there.</p><p class="bet-tooltip-body">What you choose to focus on is not just a mindset - it's a leadership decision. Teams that anchor on what's working, and build from it, move faster and pull harder.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">04</p><p class="bet-text">The customer is the north star</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">The customer is the north star.</p><p class="bet-tooltip-body">Not a slogan. An operating principle. Every strategic question eventually comes back to it - what does the customer actually need, and is the whole organization oriented around that answer?</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">05</p><p class="bet-text">People buy in to what they help create</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">People buy in to what they help create.</p><p class="bet-tooltip-body">Directives get compliance. Involvement gets ownership. The more people felt that their fingerprints were on the outcome, the harder they worked to protect it.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">06</p><p class="bet-text">Assume best intent</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Assume best intent.</p><p class="bet-tooltip-body">The shift from blame to curiosity is one of the highest-leverage moves a leader can make. People were usually doing their best with what they had.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">07</p><p class="bet-text">Business is personal. Always.</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Business is personal. Always.</p><p class="bet-tooltip-body">Business is made of people. People remember how they were treated - especially when things got hard. The leaders who compartmentalize the human side don't protect themselves. They just make worse decisions.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">08</p><p class="bet-text">Ask more than you answer</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Ask more than you answer.</p><p class="bet-tooltip-body">The best leaders are not the ones with the most answers - they're the ones who ask the best questions. Curiosity earns trust and surfaces the real problem, not the stated one.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">09</p><p class="bet-text">Be concise</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Be concise.</p><p class="bet-tooltip-body">The more words, the less effect. If you can't say it clearly and briefly, you haven't finished thinking it through. Clarity is a form of respect.</p></div>
-    </div>
-    <div class="bet-cell">
-      <p class="bet-num">10</p><p class="bet-text">Set people up. Own it when it goes wrong.</p>
-      <div class="bet-tooltip"><p class="bet-tooltip-title">Set people up. Own it when it goes wrong.</p><p class="bet-tooltip-body">Before you conclude that someone failed, ask whether they were set up to succeed. Most underperformance is a systems problem dressed up as a people problem.</p></div>
-    </div>
+    <div class="bet-cell"><p class="bet-num">01</p><p class="bet-text">Begin with the end in mind</p></div>
+    <div class="bet-cell"><p class="bet-num">02</p><p class="bet-text">Hope is an underrated virtue</p></div>
+    <div class="bet-cell"><p class="bet-num">03</p><p class="bet-text">Find the good. Live there.</p></div>
+    <div class="bet-cell"><p class="bet-num">04</p><p class="bet-text">The customer is the north star</p></div>
+    <div class="bet-cell"><p class="bet-num">05</p><p class="bet-text">People buy in to what they help create</p></div>
+    <div class="bet-cell"><p class="bet-num">06</p><p class="bet-text">Assume best intent</p></div>
+    <div class="bet-cell"><p class="bet-num">07</p><p class="bet-text">Business is personal. Always.</p></div>
+    <div class="bet-cell"><p class="bet-num">08</p><p class="bet-text">Ask more than you answer</p></div>
+    <div class="bet-cell"><p class="bet-num">09</p><p class="bet-text">Be concise</p></div>
+    <div class="bet-cell"><p class="bet-num">10</p><p class="bet-text">Set people up. Own it when it goes wrong.</p></div>
   </div>
   <a href="bets.html" class="bets-link">Read the story behind each one -></a>
 </section>
