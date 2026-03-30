@@ -19,25 +19,10 @@
 .expertise-section { padding: 2.5rem 2rem; border-bottom: 1px solid #e8e8ed; }
 .bets-section { padding: 2.5rem 2rem; border-bottom: 1px solid #e8e8ed; }
 .bets-intro { font-size: 14px; line-height: 1.7; color: #6e6e73; max-width: 100%; margin-bottom: 1.25rem; }
-.bets-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: #e8e8ed; border: 1px solid #e8e8ed; border-radius: 16px; overflow: visible; }
-.bets-grid > .bet-cell:first-child { border-radius: 16px 0 0 0; }
-.bets-grid > .bet-cell:nth-child(5) { border-radius: 0 16px 0 0; }
-.bets-grid > .bet-cell:nth-child(6) { border-radius: 0 0 0 16px; }
-.bets-grid > .bet-cell:last-child { border-radius: 0 0 16px 0; }
-.bet-cell { background: #fff; padding: 1rem 1.25rem; transition: background 0.2s ease; position: relative; cursor: pointer; }
-.bet-cell:hover { background: #f5f5f7; z-index: 50; }
-.bet-num { font-family: 'Playfair Display', serif; font-size: 11px; color: #0071e3; margin-bottom: 5px; font-weight: 500; }
-.bet-text { font-size: 12px; font-weight: 500; color: #1d1d1f; line-height: 1.4; }
-.bet-tooltip { display: none; position: absolute; left: 50%; transform: translateX(-50%); width: 360px; background: #fff; border: 1px solid #e8e8ed; border-radius: 12px; padding: 1.25rem; box-shadow: 0 8px 30px rgba(0,0,0,0.12); z-index: 100; pointer-events: none; }
-.bet-cell:nth-child(-n+5) .bet-tooltip { top: calc(100% + 10px); bottom: auto; }
-.bet-cell:nth-child(-n+5) .bet-tooltip::after { content: ''; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-bottom-color: #fff; }
-.bet-cell:nth-child(-n+5) .bet-tooltip::before { content: ''; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); border: 7px solid transparent; border-bottom-color: #e8e8ed; }
-.bet-cell:nth-child(n+6) .bet-tooltip { bottom: calc(100% + 10px); top: auto; }
-.bet-cell:nth-child(n+6) .bet-tooltip::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: #fff; }
-.bet-cell:nth-child(n+6) .bet-tooltip::before { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 7px solid transparent; border-top-color: #e8e8ed; }
-.bet-cell:hover .bet-tooltip { display: block; }
-.bet-tooltip-title { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 400; color: #1d1d1f; margin-bottom: 6px; }
-.bet-tooltip-body { font-size: 13px; line-height: 1.65; color: #6e6e73; }
+.bets-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: #e8e8e4; border: 0.5px solid #e8e8e4; border-radius: 12px; overflow: hidden; }
+  .bet-cell { background: #f7f7f5; padding: 1rem 1.25rem; }
+  .bet-num { font-family: 'Playfair Display', serif; font-size: 11px; color: #999; margin-bottom: 5px; }
+  .bet-text { font-size: 12px; font-weight: 500; color: #1a1a1a; line-height: 1.4; }
 .bets-link { display: inline-block; margin-top: 1rem; font-size: 13px; color: #0071e3; text-decoration: none; font-weight: 500; transition: opacity 0.2s ease; }
 .bets-link:hover { opacity: 0.7; }
 .story-book { padding: 2.5rem 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
