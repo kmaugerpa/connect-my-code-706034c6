@@ -47,7 +47,7 @@ textarea { height: 140px; resize: vertical; }
   <a href="/" class="nav-logo">Kevin Mauger</a>
   <ul class="nav-links">
     <li><a href="story.html">The Story</a></li>
-    <li><a href="advisory.html">Advisory</a></li>
+    <li><a href="coaching.html">Coaching</a></li>
     <li><a href="board-value.html">Board Value</a></li>
     <li><a href="entrepreneurship.html">Entrepreneurship</a></li>
     <li><a href="esop.html">ESOP</a></li>
@@ -81,10 +81,25 @@ textarea { height: 140px; resize: vertical; }
         <input type="text" id="company" name="company" placeholder="Your company">
       </div>
       <div class="form-group">
+        <label for="reason">What brings you here?</label>
+        <select id="reason" name="reason" style="width:100%;padding:0.65rem 0.875rem;border:0.5px solid #d0d0cc;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:14px;color:#1a1a1a;background:#fff;outline:none;transition:border-color 0.15s;appearance:none;-webkit-appearance:none;cursor:pointer;">
+          <option value="" disabled selected>Select the closest fit</option>
+          <option value="scaling">I'm scaling and the culture or team isn't keeping pace</option>
+          <option value="plateaued">I've plateaued and I can't see why</option>
+          <option value="brand">I need to build a brand that pulls customers toward me</option>
+          <option value="other">Something else</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="challenge">Describe your biggest challenge right now</label>
+        <textarea id="challenge" name="challenge" placeholder="The more specific you are, the better the conversation will be."></textarea>
+      </div>
+      <div class="form-group">
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
       </div>
       <button type="submit" class="form-submit">Send message</button>
+      <p style="font-size:12px;color:#86868b;margin-top:0.75rem;text-align:center;">I read every submission personally and respond within a few days.</p>
     </form>
   </div>
 
