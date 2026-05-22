@@ -26,14 +26,14 @@ input, textarea {
   outline: none;
   transition: border-color 0.15s;
 }
-input:focus, textarea:focus { border-color: #999; }
+input:focus, textarea:focus { border-color: #6e6e73; }
 textarea { height: 140px; resize: vertical; }
 .form-submit { width: 100%; padding: 0.75rem; background: #1a1a1a; color: #fff; border: none; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; }
 .form-submit:hover { background: #333; }
 .contact-sidebar { }
 .sidebar-item { padding: 1.5rem 0; border-bottom: 0.5px solid #e8e8e4; }
 .sidebar-item:first-child { padding-top: 0; }
-.sidebar-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #999; margin-bottom: 6px; }
+.sidebar-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #6e6e73; margin-bottom: 6px; }
 .sidebar-value { font-size: 14px; color: #1a1a1a; text-decoration: none; }
 .sidebar-note { font-size: 12px; color: #555; line-height: 1.5; margin-top: 4px; }
 @media (max-width: 600px) {
@@ -58,6 +58,7 @@ textarea { height: 140px; resize: vertical; }
     <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
 </nav>
+<main>
 
 <div style="padding:3.5rem 2rem 0;">
   <p class="eyebrow">Contact</p>
@@ -77,7 +78,7 @@ textarea { height: 140px; resize: vertical; }
         <input type="email" id="email" name="email" placeholder="your@email.com">
       </div>
       <div class="form-group">
-        <label for="company">Company <span style="font-weight:400;color:#999;">(optional)</span></label>
+        <label for="company">Company <span style="font-weight:400;color:#6e6e73;">(optional)</span></label>
         <input type="text" id="company" name="company" placeholder="Your company">
       </div>
       <div class="form-group">
@@ -99,7 +100,7 @@ textarea { height: 140px; resize: vertical; }
         <textarea id="message" name="message" placeholder="What's on your mind?"></textarea>
       </div>
       <button type="submit" class="form-submit">Send message</button>
-      <p style="font-size:12px;color:#86868b;margin-top:0.75rem;text-align:center;">I read every submission personally and respond within a few days.</p>
+      <p style="font-size:12px;color:#6e6e73;margin-top:0.75rem;text-align:center;">I read every submission personally and respond within a few days.</p>
     </form>
   </div>
 
@@ -124,6 +125,7 @@ textarea { height: 140px; resize: vertical; }
   </div>
 </div>
 
+</main>
 <footer style="margin-top:2.5rem;">
   <span>Kevin Mauger  |  Philadelphia, PA</span>
   <a href="https://www.linkedin.com/in/kevin-mauger-b376164/" target="_blank">LinkedIn</a>
