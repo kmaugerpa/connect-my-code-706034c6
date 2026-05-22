@@ -1,0 +1,23 @@
+# Kevin Mauger
+
+> Board member, strategist, retired owner, aspiring author. I work with a small number of leaders who want someone to challenge their thinking and speak plainly from real experience.
+
+Kevin Mauger spent thirty years at one company — NCC Automated Systems — joining straight out of college, eventually buying it when it was insolvent, building four distinct brands inside it, growing revenue from $6M to $40M, and selling it to the largest company in the space. Along the way he implemented a mid-career ESOP that distributed approximately $17.5 million to employees at exit. He now serves on boards, advises founders and leaders, and is writing a leadership memoir titled *Fight to Serve*.
+
+## Pages
+
+- [Home](/): Overview of Kevin's background, key stats, and the three reasons people typically reach out for advisory conversations.
+- [Advisory](/advisory): How the advisory relationship works — direct, ongoing, and built around your actual situation. Not a program or curriculum.
+- [Board Value](/board-value): What Kevin brings to a board — operator perspective, methodical approach, and domain expertise across manufacturing, M&A, ESOPs, and brand building.
+- [Entrepreneurship](/entrepreneurship): The four brands built inside NCC, how each was created to expand into new niches and higher-volume product lines, and the outcomes.
+- [ESOP](/esop): The story of implementing a mid-career ESOP, why it was one of the best and hardest decisions, and what it meant for the team at exit.
+- [The Story](/story): A detailed timeline of thirty years at one company — from a $25,000 salary and a yellow paisley tie to a $40M exit.
+- [The Book](/book): *Fight to Serve* — a leadership memoir about thirty years of learning that the fight and the service were never opposites. In progress.
+- [The Bets](/bets): A numbered list of hard-won beliefs about leadership, business, and life — what Kevin actually believes after three decades of building.
+- [Personal](/personal): Family, faith, hobbies, and what matters outside of work.
+- [Contact](/contact): Start a conversation. A simple form to describe your biggest challenge and what you're hoping to get from an advisory relationship.
+- [Speaking](/speaking): Speaking topics, past appearances, and how to book Kevin for an event.
+
+## Optional
+
+- No dynamic content or authenticated routes are present on this site. All pages are static and publicly accessible.
